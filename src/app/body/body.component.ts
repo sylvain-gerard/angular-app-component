@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgSwitch } from '@angular/common';
+import { AppService } from '../app.service';
+
 
 @Component({
   selector: 'app-body',
@@ -8,7 +9,7 @@ import { NgSwitch } from '@angular/common';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  constructor(public appService: AppService) { }
 
   ngOnInit() {
   }
