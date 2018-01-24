@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li [style.color]="selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">
+      Home
+    </li>
+    <li [style.color]="selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills
+    </li>
+    <li [style.color]="selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">
+      Experiences
+    </li>
+    <li [style.color]="selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">
+      Contact
+    </li>
+  </ul>
+</nav>
