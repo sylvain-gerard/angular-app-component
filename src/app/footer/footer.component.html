@@ -1,7 +1,7 @@
 
 <footer>
 <ul>
-  <li [style.color]="appService.selectedMenu == 'legal' ? 'red' : 'black'" (click)="appService.selectMenu('legal')">Legals Notices</li>
-  <li [style.color]="appService.selectedMenu == 'credits' ? 'red' : 'black'" (click)="appService.selectMenu('credits')">Credits</li>
+  <li [style.color]="appService.selectedMenu == 'legal' ? 'red' : 'black'" (click)="selectMenu('legal')">Legals Notices</li>
+  <li [style.color]="appService.selectedMenu == 'credits' ? 'red' : 'black'" (click)="selectMenu('credits')">Credits</li>
 </ul>
 </footer>

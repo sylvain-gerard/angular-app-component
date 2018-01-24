@@ -13,4 +13,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  public selectMenu(menu): void {
+    this.appService.selectMenu(menu);
+  }
+
 }
