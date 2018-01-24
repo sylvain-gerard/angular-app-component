@@ -14,7 +14,4 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  selectMenu(menu) {
-    this.appService.selectedMenu = menu;
-}
 }

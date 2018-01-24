@@ -1,14 +1,14 @@
 <nav>
   <ul>
-    <li [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">
+    <li [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="appService.selectMenu('home')">
       Home
     </li>
-    <li [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills
+    <li [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="appService.selectMenu('skills')">Skills
     </li>
-    <li [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">
+    <li [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="appService.selectMenu('experiences')">
       Experiences
     </li>
-    <li [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">
+    <li [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="appService.selectMenu('contact')">
       Contact
     </li>
   </ul>

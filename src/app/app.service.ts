@@ -7,4 +7,8 @@ export class AppService {
 
   selectedMenu = 'home';
 
+  selectMenu(menu) {
+    this.selectedMenu = menu;
+}
+
 }
