@@ -1,7 +1,5 @@
 
-<footer>
-<ul>
-  <li [style.color]="appService.selectedMenu == 'legal' ? 'red' : 'black'" (click)="selectMenu('legal')">Legals Notices</li>
-  <li [style.color]="appService.selectedMenu == 'credits' ? 'red' : 'black'" (click)="selectMenu('credits')">Credits</li>
-</ul>
-</footer>
+<mat-toolbar>
+  <button mat-button [style.color]="appService.selectedMenu == 'legal' ? 'white' : 'green'" (click)="selectMenu('legal')">Legals Notices</button>
+  <button mat-button [style.color]="appService.selectedMenu == 'credits' ? 'white' : 'green'" (click)="selectMenu('credits')">Credits</button>
+</mat-toolbar>

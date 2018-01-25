@@ -1,15 +1,23 @@
-<nav>
-  <ul>
-    <li [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">
+<mat-toolbar>
+  <span>My Application</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>view_headline</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" fxLayout="row">
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">
       Home
-    </li>
-    <li [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills
-    </li>
-    <li [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">
+    </button>
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills
+    </button>
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">
       Experiences
-    </li>
-    <li [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">
+    </button>
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">
       Contact
-    </li>
-  </ul>
-</nav>
+    </button>
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'todo' ? 'red' : 'black'" (click)="selectMenu('todo')">
+      TODOS
+    </button>
+  </mat-menu>
+</mat-toolbar>

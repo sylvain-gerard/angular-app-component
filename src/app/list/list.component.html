@@ -1,0 +1,14 @@
+<p>TODOList Items:</p>
+<ul>
+  <li *ngFor="let selectedTodo of todoService.todoList" >
+    
+    <input type="text" [value]=selectedTodo #object/>
+    <button mat-button type="submit" (click)='selectTodo(selectedTodo); deleteTodo(selectedTodo)'>Delete</button>
+    <button mat-button type="submit" (click)='selectTodo(selectedTodo); editTodo(selectedTodo, object.value)'>Edit</button>
+    <!-- <button type="submit" (click)='modifyTodo(selectedTodo)'>Validate</button> -->  
+  </li>
+</ul>
+
+    
+ 
+
