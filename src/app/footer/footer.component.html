@@ -1,5 +1,5 @@
 
 <mat-toolbar>
-  <button mat-button [style.color]="appService.selectedMenu == 'legal' ? 'white' : 'green'" (click)="selectMenu('legal')">Legals Notices</button>
-  <button mat-button [style.color]="appService.selectedMenu == 'credits' ? 'white' : 'green'" (click)="selectMenu('credits')">Credits</button>
+  <button mat-button [style.color]="appService.selectedMenu == 'legal' ? 'white' : 'green'" routerLink="/legal">Legals Notices</button>
+  <button mat-button [style.color]="appService.selectedMenu == 'credits' ? 'white' : 'green'" routerLink="/credits">Credits</button>
 </mat-toolbar>

@@ -22,6 +22,14 @@ import { AddComponent } from './add/add.component';
 import { ListComponent } from './list/list.component';
 
 import { TodoServiceService } from './todo-service.service';
+import { HomeComponent } from './home/home.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactComponent } from './contact/contact.component';
+import { LegalComponent } from './legal/legal.component';
+import { CreditsComponent } from './credits/credits.component';
+import { TodoComponent } from './todo/todo.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 
@@ -33,6 +41,13 @@ import { TodoServiceService } from './todo-service.service';
     FooterComponent,
     AddComponent,
     ListComponent,
+    HomeComponent,
+    SkillsComponent,
+    ExperiencesComponent,
+    ContactComponent,
+    LegalComponent,
+    CreditsComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +58,8 @@ import { TodoServiceService } from './todo-service.service';
     MatIconModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [AppService, TodoServiceService],
   bootstrap: [AppComponent]

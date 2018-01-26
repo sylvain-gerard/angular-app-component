@@ -5,18 +5,18 @@
     <mat-icon>view_headline</mat-icon>
   </button>
   <mat-menu #menu="matMenu" fxLayout="row">
-    <button mat-menu-item [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" routerLink="/home">
       Home
     </button>
-    <button mat-menu-item [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" routerLink="/skills">Skills
     </button>
-    <button mat-menu-item [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" routerLink="/experiences">
       Experiences
     </button>
-    <button mat-menu-item [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" routerLink="/contact">
       Contact
     </button>
-    <button mat-menu-item [style.color]="appService.selectedMenu == 'todo' ? 'red' : 'black'" (click)="selectMenu('todo')">
+    <button mat-menu-item [style.color]="appService.selectedMenu == 'todo' ? 'red' : 'black'" routerLink="/todo')">
       TODOS
     </button>
   </mat-menu>
