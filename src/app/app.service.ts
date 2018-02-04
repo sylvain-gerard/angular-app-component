@@ -5,14 +5,10 @@ export class AppService {
 
   constructor() { }
 
-  selectedMenu = '';
+  selectedMenu = 'home';
 
   selectMenu(menu) {
-    if (this.selectedMenu === 'red') {
-    this.selectedMenu = 'black';
-    } else {
-      this.selectedMenu = 'black';
-    }
+    this.selectedMenu = menu;
 }
 
 }
