@@ -10,6 +10,7 @@ import { LegalComponent } from './legal/legal.component';
 import { CreditsComponent } from './credits/credits.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
   { path: 'skills', component: SkillsComponent  },
   { path: 'experiences', component: ExperiencesComponent },
