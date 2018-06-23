@@ -1,6 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div [style.minHeight.%]="100" fxLayout="column" fxLayoutAlign="space-between">
-<app-header></app-header>
-<app-body [style.padding.em]="2" fxflex="1"></app-body>
-<app-footer></app-footer>
+<div [style.minHeight.%]="100" fxLayout="column" fxLayoutAlign="space-between center">
+  <app-header fxLayout="row" [style.minWidth.%]="100"></app-header>
+  <div [style.padding.em]="2" fxLayout="row" [style.minWidth.%]="100" fxLayoutAlign="center">
+    <app-body></app-body>
+  </div>
+  <app-footer fxLayout="row" [style.minWidth.%]="100"></app-footer>
 </div>
